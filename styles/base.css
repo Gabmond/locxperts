@@ -1,0 +1,66 @@
+/* ==========================================================
+   LOCXPERT STYLES  (mobile-first: base styles are for phones,
+   min-width media queries add layout for larger screens)
+   Sections: 1 Base  2 Utilities  3 Buttons  4 Header  5 Images
+   6 Page sections  7 Gallery  8 Forms  9 FAQ  10 Footer
+   ========================================================== */
+
+/* ---------- 1. BASE ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: calc(var(--header-height) + 1rem); }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-on-light);
+  background: var(--surface-cream);
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-tight);
+  margin: 0 0 var(--space-4);
+  overflow-wrap: break-word;
+}
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+p { margin: 0 0 var(--space-4); }
+ul, ol { margin: 0; padding: 0; }
+a { color: var(--color-orange-dark); text-underline-offset: 0.2em; }
+
+:focus-visible { outline: 3px solid var(--color-orange-dark); outline-offset: 3px; }
+.is-dark { color: var(--text-on-dark); background: var(--surface-dark); }
+.is-dark a { color: var(--color-gold-light); }
+.is-dark :focus-visible { outline-color: var(--color-gold-light); }
+.is-dark h1, .is-dark h2, .is-dark h3 { color: var(--text-on-dark); }
+
+/* Shared side padding: keeps content centred in a max-width column while backgrounds stay full-width */
+.site-header, .site-footer, main > section, main > aside {
+  padding-inline: max(var(--container-padding), calc((100% - var(--container-max)) / 2));
+}
+main > section, main > aside { padding-block: var(--section-space); }
+
+.section-cream { background: var(--surface-cream); }
+.section-white { background: var(--surface-white); }
+.section-sand { background: var(--surface-sand); }
+
+.section-heading { max-width: var(--container-narrow); margin-bottom: var(--space-6); }
+.section-heading p { font-size: var(--font-size-large); color: var(--text-muted-on-light); }
+.is-dark .section-heading p { color: var(--text-muted-on-dark); }
+.section-action { margin: var(--space-6) 0 0; }
+
+.eyebrow {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--color-gold-light);
+  margin-bottom: var(--space-4);
+}

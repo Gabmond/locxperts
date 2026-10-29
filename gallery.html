@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Work | Loc Styles and Care | LocxPert</title>
+  <meta name="description" content="Explore loc styles, maintenance work, and finished looks from LocxPert, then discuss the style you have in mind.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Work | Loc Styles and Care | LocxPert">
+  <meta property="og:description" content="Explore loc styles, maintenance work, and finished looks from LocxPert, then discuss the style you have in mind.">
+  <meta property="og:locale" content="en_NG">
+  <meta name="theme-color" content="#080807">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23080807'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23d9a441' font-family='Georgia,serif'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./script/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== SITE HEADER (same on every page) ===== -->
+  <header class="site-header is-dark">
+    <a class="site-logo" href="index.html">
+      <img class="logo-image" src="assets/images/locxpert-wordmark.png" alt="LocxPert — Precision &amp; Elegance" width="260" height="84">
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+      <span class="visually-hidden">Menu</span>
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" aria-current="page">Our Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="button button-primary header-cta" href="booking.html">Book Now</a>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero page-hero-simple is-dark" aria-labelledby="gallery-title">
+      <div class="page-hero-content">
+        <p class="eyebrow">OUR WORK</p>
+        <h1 id="gallery-title">A Gallery of Locs, Styles &amp; Possibilities.</h1>
+        <p>Explore loc styling, maintenance, and transformations for inspiration on your own loc journey.</p>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY GRID =====
+    To add a photo: copy one <figure> below, change data-category, the image src, and the alt text.
+    Categories: starter-locs, retwist-maintenance, loc-repair, loc-extensions, styling-updos, washing-care -->
+    <section class="gallery-section section-cream" id="gallery" aria-labelledby="gallery-grid-title">
+      <h2 class="visually-hidden" id="gallery-grid-title">Gallery</h2>
+      <div class="gallery-filters" role="group" aria-label="Filter gallery by category">
+        <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-filter="starter-locs" aria-pressed="false">Starter Locs</button>
+        <button class="filter-button" type="button" data-filter="retwist-maintenance" aria-pressed="false">Retwist &amp; Maintenance</button>
+        <button class="filter-button" type="button" data-filter="loc-repair" aria-pressed="false">Loc Repair</button>
+        <button class="filter-button" type="button" data-filter="loc-extensions" aria-pressed="false">Loc Extensions</button>
+        <button class="filter-button" type="button" data-filter="styling-updos" aria-pressed="false">Styling &amp; Updos</button>
+        <button class="filter-button" type="button" data-filter="washing-care" aria-pressed="false">Washing &amp; Care</button>
+      </div>
+      <p class="visually-hidden" id="gallery-status" role="status"></p>
+      <div class="gallery-grid" id="gallery-grid">
+
+        <figure class="gallery-card" data-category="styling-updos">
+          <button class="gallery-open" type="button" aria-label="View larger image: Styling &amp; Updos">
+            <div class="image-frame ratio-portrait" data-placeholder="Your work photo">
+              <img src="./assets/images/loc style 1.png" alt="Placeholder for a Styling &amp; Updos photograph" width="800" height="1000" loading="lazy">
+            </div>
+          </button>
+          <figcaption>Styling &amp; Updos</figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="retwist-maintenance">
+          <button class="gallery-open" type="button" aria-label="View larger image: Retwist &amp; Maintenance">
+            <div class="image-frame ratio-landscape" data-placeholder="Your work photo">
+              <img src="./assets/images/retwist.png" alt="Placeholder for a Retwist &amp; Maintenance photograph" width="1200" height="800" loading="lazy">
+            </div>
+          </button>
+          <figcaption>Retwist &amp; Maintenance</figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="starter-locs">
+          <button class="gallery-open" type="button" aria-label="View larger image: Starter Locs">
+            <div class="image-frame ratio-square" data-placeholder="Your work photo">
+              <img src="./assets/images/starter loc 1.jpg" alt="Placeholder for a Starter Locs photograph" width="800" height="800" loading="lazy">
+            </div>
+          </button>
+          <figcaption>Starter Locs</figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="loc-extensions">
+          <button class="gallery-open" type="button" aria-label="View larger image: Loc Extensions">
+            <div class="image-frame ratio-portrait" data-placeholder="Your work photo">
+              <img src="./assets/images/locs extension.png" alt="Placeholder for a Loc Extensions photograph" width="800" height="1000" loading="lazy">
+            </div>
+          </button>
+          <figcaption>Loc Extensions</figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="washing-care">
+          <button class="gallery-open" type="button" aria-label="View larger image: Washing &amp; Care">
+            <div class="image-frame ratio-square" data-placeholder="Your work photo">
+              <img src="./assets/images/locs washing & care.png" alt="Placeholder for a Washing &amp; Care photograph" width="800" height="800" loading="lazy">
+            </div>
+          </button>
+          <figcaption>Washing &amp; Care</figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="styling-updos">
+          <button class="gallery-open" type="button" aria-label="View larger image: Styling &amp; Updos">
+            <div class="image-frame ratio-landscape" data-placeholder="Your work photo">
+              <img src="./assets/images/loc style 2.png" alt="Placeholder for a Styling &amp; Updos photograph" width="1200" height="800" loading="lazy">
+            </div>
+          </button>
+          <figcaption>Styling &amp; Updos</figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="loc-repair">
+          <button class="gallery-open" type="button" aria-label="View larger image: Loc Repair">
+            <div class="image-frame ratio-portrait" data-placeholder="Your work photo">
+              <img src="./assets/images/locs repair.jpg" alt="Placeholder for a Loc Repair photograph" width="800" height="1000" loading="lazy">
+            </div>
+          </button>
+          <figcaption>Loc Repair</figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="retwist-maintenance">
+          <button class="gallery-open" type="button" aria-label="View larger image: Retwist &amp; Maintenance">
+            <div class="image-frame ratio-square" data-placeholder="Your work photo">
+              <img src="./assets/images/locs style 7.png" alt="Placeholder for a Retwist &amp; Maintenance photograph" width="800" height="800" loading="lazy">
+            </div>
+          </button>
+          <figcaption>Retwist &amp; Maintenance</figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="starter-locs">
+          <button class="gallery-open" type="button" aria-label="View larger image: Starter Locs">
+            <div class="image-frame ratio-portrait" data-placeholder="Your work photo">
+              <img src="./assets/images/starter locs 2.jpg" alt="Placeholder for a Starter Locs photograph" width="800" height="1000" loading="lazy">
+            </div>
+          </button>
+          <figcaption>Starter Locs</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== TRANSFORMATIONS ===== -->
+    <section class="story-section section-white" aria-labelledby="story-title">
+      <div class="section-heading">
+        <h2 id="story-title">Every Journey Has a Story.</h2>
+        <p>From maintenance to styling, discover different ways locs can be cared for and expressed.</p>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY CTA ===== -->
+    <section class="cta-section is-dark" aria-labelledby="gallery-cta-title">
+      <h2 id="gallery-cta-title">Have a Look in Mind?</h2>
+      <p>Share your inspiration with LocxPert and discuss whether the style is suitable for your locs.</p>
+      <a class="button button-primary" href="booking.html">Discuss Your Style</a>
+    </section>
+
+    <!-- ===== LIGHTBOX (opened by script) ===== -->
+    <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+      <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close image viewer">&times;</button>
+      <img class="lightbox-image" id="lightbox-image" src="" alt="">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </dialog>
+
+  </main>
+
+  <!-- ===== SITE FOOTER (same on every page) ===== -->
+  <footer class="site-footer is-dark">
+    <div class="footer-brand">
+      <a class="site-logo" href="index.html">
+        <img class="logo-image" src="assets/images/locxpert-logo.png" alt="LocxPert — Precision &amp; Elegance" width="160" height="160">
+        </a>
+      <p class="footer-tagline">Luxury loc care, delivered personally.</p>
+      <p>LocxPert &mdash; Personalised loc care, thoughtful maintenance, and distinctive styling.</p>
+    </div>
+
+    <nav class="footer-navigation" aria-label="Footer navigation">
+      <h2 class="footer-heading">Explore</h2>
+      <ul class="footer-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Our Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-contact">
+      <h2 class="footer-heading">Get in touch</h2>
+      <p>Home-service loc care across Lagos, Nigeria.</p>
+      <p>WhatsApp: <a href="https://wa.me/2347063916558">+234 706 391 6558</a></p>
+      <p><a href="booking.html">Book a Consultation</a></p>
+    </div>
+
+    <p class="footer-copyright">&copy; <span id="copyright-year">2026</span> LocxPert. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

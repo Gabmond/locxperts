@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a Loc Appointment in Lagos | LocxPert</title>
+  <meta name="description" content="Request a LocxPert appointment, tell us about your locs and preferred date, and discuss availability and pricing.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Book a Loc Appointment in Lagos | LocxPert">
+  <meta property="og:description" content="Request a LocxPert appointment, tell us about your locs and preferred date, and discuss availability and pricing.">
+  <meta property="og:locale" content="en_NG">
+  <meta name="theme-color" content="#080807">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23080807'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23d9a441' font-family='Georgia,serif'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./script/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== SITE HEADER (same on every page) ===== -->
+  <header class="site-header is-dark">
+    <a class="site-logo" href="index.html">
+      <img class="logo-image" src="assets/images/locxpert-wordmark.png" alt="LocxPert — Precision &amp; Elegance" width="260" height="84">
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+      <span class="visually-hidden">Menu</span>
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+
+    <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Our Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html" aria-current="page">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="button button-primary header-cta" href="booking.html">Book Now</a>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero page-hero-simple is-dark" aria-labelledby="booking-title">
+      <div class="page-hero-content">
+        <p class="eyebrow">BOOKING</p>
+        <h1 id="booking-title">Let&rsquo;s Plan Your Loc-Care Appointment.</h1>
+        <p>Tell us about your locs, the service you&rsquo;re interested in, and your preferred appointment date. We&rsquo;ll discuss availability and pricing with you.</p>
+      </div>
+    </section>
+
+    <!-- ===== BOOKING FORM ===== -->
+    <section class="booking-section section-cream" aria-labelledby="form-title">
+      <h2 id="form-title">Request a Consultation</h2>
+      <p class="form-note">Fields marked <span aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+
+      <form id="booking-form" class="booking-form" novalidate>
+
+        <div class="form-group">
+          <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+          <input type="text" id="full-name" name="full-name" autocomplete="name" required aria-describedby="error-full-name">
+          <p class="form-error" id="error-full-name" role="alert"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="phone-number">Phone number <span aria-hidden="true">*</span></label>
+          <input type="tel" id="phone-number" name="phone-number" autocomplete="tel" inputmode="tel" required aria-describedby="error-phone-number">
+          <p class="form-error" id="error-phone-number" role="alert"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="requested-service">Requested service <span aria-hidden="true">*</span></label>
+          <select id="requested-service" name="requested-service" required aria-describedby="error-requested-service">
+            <option value="">Select a service</option>
+            <option value="starter-locs">Starter Locs</option>
+            <option value="retwist-maintenance">Retwist &amp; Maintenance</option>
+            <option value="loc-repair-restoration">Loc Repair &amp; Restoration</option>
+            <option value="loc-extensions">Loc Extensions</option>
+            <option value="washing-conditioning">Loc Washing &amp; Conditioning</option>
+            <option value="styling-updos">Styling &amp; Updos</option>
+            <option value="detox-deep-cleansing">Loc Detox &amp; Deep Cleansing</option>
+            <option value="consultation">Loc Consultation</option>
+            <option value="not-sure">Not Sure Yet</option>
+          </select>
+          <p class="form-error" id="error-requested-service" role="alert"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="appointment-date">Preferred appointment date <span aria-hidden="true">*</span></label>
+          <input type="date" id="appointment-date" name="appointment-date" required aria-describedby="date-help error-appointment-date">
+          <p class="form-help" id="date-help">Your preferred date is a request. It is subject to availability and must be confirmed by LocxPert.</p>
+          <p class="form-error" id="error-appointment-date" role="alert"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="lagos-area">Lagos area or neighbourhood <span aria-hidden="true">*</span></label>
+          <input type="text" id="lagos-area" name="lagos-area" autocomplete="address-level2" required aria-describedby="area-help error-lagos-area">
+          <p class="form-help" id="area-help">Needed for home-service requests, so we can discuss coverage and availability.</p>
+          <p class="form-error" id="error-lagos-area" role="alert"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="loc-details">Description of your locs or desired result</label>
+          <textarea id="loc-details" name="loc-details" rows="5" aria-describedby="details-help"></textarea>
+          <p class="form-help" id="details-help">Optional. Describe your current locs, concerns, or the style you have in mind.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="loc-photos">Loc photographs</label>
+          <input type="file" id="loc-photos" name="loc-photos" accept="image/jpeg,image/png,image/webp" multiple aria-describedby="photos-help error-loc-photos">
+          <p class="form-help" id="photos-help">Optional. Photos help LocxPert understand your request. JPEG, PNG or WebP, up to 5 photos of 10 MB each. Photos are not uploaded by this website: after WhatsApp opens, you will need to attach them manually.</p>
+          <p class="form-error" id="error-loc-photos" role="alert"></p>
+          <ul class="photo-list" id="photo-list" aria-label="Selected photographs"></ul>
+        </div>
+
+        <button type="submit" class="button button-primary form-submit">Continue to WhatsApp</button>
+
+        <div class="form-result" id="form-result" role="status" tabindex="-1" hidden></div>
+      </form>
+    </section>
+
+    <!-- ===== BOOKING NOTICE ===== -->
+    <aside class="booking-notice section-white" aria-labelledby="notice-title">
+      <h2 class="visually-hidden" id="notice-title">Booking notice</h2>
+      <p class="notice-text">Submitting a request does not automatically confirm your appointment. Your booking is confirmed only after LocxPert has reviewed your request and agreed on the service, pricing, date, time, and location with you.</p>
+    </aside>
+
+    <!-- ===== WHAT HAPPENS NEXT ===== -->
+    <section class="process-section is-dark" aria-labelledby="next-title">
+      <div class="section-heading">
+        <h2 id="next-title">What Happens After You Submit?</h2>
+      </div>
+      <ol class="process-list process-list-five">
+        <li class="process-step"><p>Your details are prepared in a WhatsApp message.</p></li>
+        <li class="process-step"><p>WhatsApp opens so you can review and send the message.</p></li>
+        <li class="process-step"><p>LocxPert reviews your enquiry and responds.</p></li>
+        <li class="process-step"><p>You discuss the service, price, availability, date, time, and location.</p></li>
+        <li class="process-step"><p>The appointment is confirmed once the details are agreed.</p></li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- ===== SITE FOOTER (same on every page) ===== -->
+  <footer class="site-footer is-dark">
+    <div class="footer-brand">
+      <a class="site-logo" href="index.html">
+        <img class="logo-image" src="assets/images/locxpert-logo.png" alt="LocxPert — Precision &amp; Elegance" width="160" height="160">
+        </a>
+      <p class="footer-tagline">Luxury loc care, delivered personally.</p>
+      <p>LocxPert &mdash; Personalised loc care, thoughtful maintenance, and distinctive styling.</p>
+    </div>
+
+    <nav class="footer-navigation" aria-label="Footer navigation">
+      <h2 class="footer-heading">Explore</h2>
+      <ul class="footer-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Our Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-contact">
+      <h2 class="footer-heading">Get in touch</h2>
+      <p>Home-service loc care across Lagos, Nigeria.</p>
+      <p>WhatsApp: <a href="https://wa.me/2347063916558">+234 706 391 6558</a></p>
+      <p><a href="booking.html">Book a Consultation</a></p>
+    </div>
+
+    <p class="footer-copyright">&copy; <span id="copyright-year">2026</span> LocxPert. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

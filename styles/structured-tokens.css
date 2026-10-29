@@ -1,0 +1,31 @@
+/* Compatibility tokens for the structured pages in /pages. */
+:root {
+  --container-width: var(--container-max);
+  --background-primary: var(--surface-dark);
+  --background-secondary: var(--surface-charcoal);
+  --background-dark: var(--surface-dark);
+  --surface-light: var(--surface-cream);
+  --text-dark: var(--text-on-light);
+  --white: #fff;
+  --black: var(--color-black);
+  --brand-gold: var(--color-gold);
+  --brand-gold-light: var(--color-gold-light);
+  --brand-orange: var(--color-orange);
+  --brand-orange-light: var(--color-orange-light);
+  --font-family-body: var(--font-body);
+  --font-family-display: var(--font-heading);
+  --font-weight-normal: var(--font-weight-regular);
+  --font-size-xs: 0.75rem;
+  --font-size-sm: var(--font-size-small);
+  --radius-sm: var(--radius-small);
+  --border-muted: 1px solid var(--border-gold);
+  --border-subtle: 1px solid var(--border-light);
+  --grey-200: #ded9d0;
+  --grey-300: #bdb6aa;
+  --grey-400: #989187;
+  --grey-600: #55504a;
+  --grey-700: #35312d;
+  --tertiary-base: var(--color-orange-dark);
+  --tertiary-shade: #17130d;
+  --tertiary-tint: var(--color-gold);
+}
